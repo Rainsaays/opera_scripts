@@ -66,5 +66,5 @@ if [ $# -eq 2 ];then
    docker_build
    docker_update
 else 
-  echo "请输入2个正常参数"
+  echo "请输入2个正常参数!!!"
 fi
