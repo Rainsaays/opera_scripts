@@ -9,7 +9,7 @@
 ```
 ### micro_check/logger.py
 ```
-写日志的函数
+写日志到文件跟控制台
 
 ```
 ### micro_check/micro.py micro_check/micro_easy.py
