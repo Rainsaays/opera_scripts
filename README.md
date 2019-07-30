@@ -1,4 +1,4 @@
-#log_check/log_check.py
+###log_check/log_check.py
 ```
 1.该文件支持语法格式为python3 
 2.日志文件需要跟可执行的python文件放同一目录 
