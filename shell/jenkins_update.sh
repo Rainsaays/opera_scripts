@@ -25,6 +25,7 @@ docker_get_img(){
 
 docker_rm_img(){
 	curl -u"$DOCKER_USER:$DOCKER_PASSWD" -s -X DELETE  -u $DOCKER_USER:$DOCKER_PASSWD  'https://'$DOCKER_HOST'/api/repositories/'$APP_MODULE'%2F'$1'/tags/'$2''
+	
 }
 
 docker_build(){
@@ -65,5 +66,5 @@ if [ $# -eq 2 ];then
    docker_build
    docker_update
 else 
-  echo "请输入2个正常参数"
+  echo "请输入2个正常参数!!!"
 fi
