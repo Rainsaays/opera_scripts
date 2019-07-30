@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @File  : cms_log
-# @Author: admin
-# @Date  : 2019/5/9
+
+
 import re
 FILE_NAME ="SudoCMS.LOG"
 ###读取日志文件,并检查error日志###
