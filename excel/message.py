@@ -21,7 +21,7 @@ from_addr = 'opsyunw@126.com'
 # 发件人密码，通过控制台创建的发件人密码
 password = '123'
 # 收件人地址或是地址列表，支持多个收件人用逗号分隔，最多30个
-to_addr = '123@z26.com'
+to_addr = '123@126.com,333@126.com'
 stmp_addr = 'smtp.126.com'
 stmp_port = 465
 
@@ -68,7 +68,7 @@ def message(email_subject,email_text,file_path=""):
         client.login(from_addr,password)
         #发件人和认证地址必须一致
         #备注：若想取到DATA命令返回值,可参考smtplib的sendmaili封装方法:
-        client.sendmail(from_addr, [to_addr], msg.as_string())
+        client.sendmail(from_addr, to_addr.split(','), msg.as_string())
         client.quit()
         print('邮件发送成功！')
     except smtplib.SMTPConnectError as e:
